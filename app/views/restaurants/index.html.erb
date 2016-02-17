@@ -1,0 +1,22 @@
+
+
+<div class="wrapper badge-blue">
+  <h1 class="bg-grey text-center">Voici tous les restaurants en base de données</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-4">
+        <% @restaurants.each do |r| %>
+        <h2 class="badge-red badge-bordered "><%= r.name %></h2>
+        <p><%= r.address %></p>
+        <p><%= r.phone_number %></p>
+        <p><%= r.category %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
